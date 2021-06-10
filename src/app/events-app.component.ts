@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'ngf-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
+    selector: 'ngf-events-app',
+    template: `
+        <h1>Hello</h1>
+    `,
 })
-export class AppComponent {
+export class EventsAppComponent {
     title = 'ng-fundamentals';
 }
