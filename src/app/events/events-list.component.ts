@@ -6,14 +6,7 @@ import { Component } from '@angular/core';
         <div>
             <h1>Upcoming Angular Events</h1>
             <hr />
-            <ngf-event-thumbnail
-                #thumbnail
-                [event]="event"
-            ></ngf-event-thumbnail>
-            <h3>{{ thumbnail.someProperty }}</h3>
-            <button class="btn btn-primary" (click)="thumbnail.logFoo()">
-                Click me!
-            </button>
+            <ngf-event-thumbnail [event]="event"></ngf-event-thumbnail>
         </div>
     `,
 })
