@@ -8,3 +8,21 @@ wrap them in an object first.
 
 # reference variable is a way that we can use to access public method and properties of a child component.
 Template reference variables are used for this.
+
+# interpolation {{ user.name }} -> putting expression in curly braces
+# property binding [src]="user.imageUrl" -> putting expression in quotes
+# event binding (click)="doSomething()" -> putting statement in quotes
+
+# Expression Restrictions
+    * Assignments (=, +=, ++, etc)
+    * new Keyword
+    * Expression Chaining With ;
+    * Global Namespace like window, console etc.
+
+# Statement Restrictions
+    * Assignments (+=, ++, etc)  = is allowed
+    * new Keyword
+    * Global Namespace like window, console etc.
+
+# Structural directives (for example *ngFor) change the shape of the DOM: they add or remove HTML-elements in HTML documents.
+
