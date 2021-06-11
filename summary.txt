@@ -26,3 +26,4 @@ Template reference variables are used for this.
 
 # Structural directives (for example *ngFor) change the shape of the DOM: they add or remove HTML-elements in HTML documents.
 
+# safe navigation operator ? -> <div>Date: {{ event?.date }}</div>
