@@ -1,0 +1,7 @@
+# Input parameters are used when constructing a child component in order to give this child component its data.
+
+# Output is quite often used in response to some event within a child component so that the parent can receive
+some information when some event like a click occurs within a child.
+
+# You can only pass along a single value with a event emitter so if you need to send multiple values you can just
+wrap them in an object first.
