@@ -8,17 +8,21 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
             <div>Date: {{ event.date }}</div>
             <div>Time: {{ event.time }}</div>
             <div>Price: \${{ event.price }}</div>
-            <button class="btn btn-primary" (click)="handleClickMe()">
-                Click me!
-            </button>
+            <div>
+                <span>Location: {{ event.location.address }}</span>
+                <span
+                    >{{ event.location.city }},
+                    {{ event.location.country }}</span
+                >
+            </div>
         </div>
     `,
 })
 export class EventThumbnailComponent {
     @Input() event: any;
-    @Output() eventClick = new EventEmitter();
+    someProperty: string = 'some value';
 
-    handleClickMe(): void {
-        this.eventClick.emit(this.event.name);
+    logFoo(): void {
+        console.log('foo');
     }
 }

@@ -5,3 +5,6 @@ some information when some event like a click occurs within a child.
 
 # You can only pass along a single value with a event emitter so if you need to send multiple values you can just
 wrap them in an object first.
+
+# reference variable is a way that we can use to access public method and properties of a child component.
+Template reference variables are used for this.
